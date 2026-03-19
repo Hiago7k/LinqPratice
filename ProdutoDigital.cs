@@ -4,7 +4,7 @@ namespace LinqPratice
 {
     internal class ProdutoDigital : Produtos 
     {
-        public ProdutoDigital(string nome, decimal preco, string digital) : base(nome, preco)
+        public ProdutoDigital(string nome, int preco, string digital) : base(nome, preco)
         {
             Digital = digital;
         }
