@@ -10,4 +10,9 @@ internal class ProdutoFisico : Produtos
     }
 
     public string Tipo { get;  }
+
+    public override void ExibirDados()
+    {
+        Console.WriteLine("-");
+    }
 }

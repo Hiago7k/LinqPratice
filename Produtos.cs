@@ -1,7 +1,7 @@
 ﻿
 namespace LinqPratice;
 
-internal class Produtos
+abstract class Produtos
 {
     public Produtos(string nome, decimal preco)
     {
@@ -13,7 +13,7 @@ internal class Produtos
     public decimal Preco { get; }
 
 
-    public void ExibirDados()
+    public virtual void ExibirDados()
     {
         Console.WriteLine(Nome);
         Console.WriteLine(Preco);
