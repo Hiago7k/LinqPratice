@@ -3,14 +3,14 @@ namespace LinqPratice;
 
 abstract class Produtos
 {
-    public Produtos(string nome, int preco)
+    public Produtos(string nome, decimal preco)
     {
         Nome = nome;
         Preco = preco;
     }
 
     public string Nome { get; }
-    public int Preco { get; }
+    public decimal Preco { get; }
 
 
     public virtual void ExibirDados()
