@@ -6,7 +6,7 @@ internal class LinqFilter
 {
     public static void Filtros(List<Produtos> produtos) 
     {
-        var pegandoFiltro = produtos.Where(produtos => produtos.Preco>0).Select(produtos => produtos.Nome).ToList();
+        var pegandoFiltro = produtos.OrderBy(produtos => produtos.Preco).Select(produtos => produtos.Nome).ToList();
 
         foreach (var filtro in pegandoFiltro)
         {
@@ -17,7 +17,7 @@ internal class LinqFilter
     public static void Media(List<Produtos> produtos) 
     {
         var pegandoFiltro = produtos.Select(produtos => produtos.Preco).Average();
-        Console.WriteLine(pegandoFiltro);
+        Console.WriteLine($"Media dos precos dos produtos: {pegandoFiltro}");
        
     }
 
