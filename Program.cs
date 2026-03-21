@@ -14,3 +14,4 @@ LinqFilter.Filtros(produtos);
 LinqFilter.Media(produtos);
 
 Console.WriteLine("Killstrak commits");
+Console.WriteLine("Killstrak commits");
