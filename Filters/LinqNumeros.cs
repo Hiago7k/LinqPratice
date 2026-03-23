@@ -11,13 +11,13 @@ internal class LinqNumeros
 
     public static void FiltroInteiros(List<int> numeros)
     {
-        var filtroDaListaPares = numeros.Where(numeros => numeros > 4).ToList();
+        var filtroDaListaPares = numeros.Where(numeros => numeros > 4).ToList()!;
 
-        foreach (var numero in filtroDaListaPares) 
+        foreach (var numero in filtroDaListaPares)
         {
             Console.WriteLine("Exibindo todos, os números pares...");
             Console.WriteLine(numero);
         }
     }
-   
+
 }

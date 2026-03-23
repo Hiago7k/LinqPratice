@@ -1,6 +1,7 @@
 ﻿
 using LinqPratice;
 using LinqPratice.Filters;
+using System.Collections.Generic;
 
 
 //List<Produtos> produtos = new List<Produtos>
@@ -19,7 +20,14 @@ using LinqPratice.Filters;
 
 // Atividade 2
 
+//Numeros  numeros = new Numeros();
+
+//.FiltroInteiros();
+
+
 List<int> numeros = new List<int> 
 {
-    1, 2, 3, 4, 5, 6, 7 ,8 ,0 ,10
+    1, 2 ,3 ,4 ,5 ,6 ,7 ,8, 9, 10
 };
+
+LinqNumeros.FiltroInteiros(numeros);
